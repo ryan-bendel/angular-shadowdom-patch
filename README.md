@@ -33,11 +33,11 @@ You should see a message in the console indicating that the patch has been appli
 
 ### Before
 
-<img src="/src/images/before.png" width="400" height="100%">
+<img src="https://raw.githubusercontent.com/ryan-bendel/angular-shadowdom-patch/refs/heads/main/src/images/before.png" width="400" height="100%">
 
 ### After
 
-<img src="/src/images/after.png" width="400" height="100%">
+<img src="https://raw.githubusercontent.com/ryan-bendel/angular-shadowdom-patch/refs/heads/main/src/images/after.png" width="400" height="100%">
 
 #### Questions
 

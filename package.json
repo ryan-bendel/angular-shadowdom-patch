@@ -1,6 +1,6 @@
 {
   "name": "angular-shadowdom-patch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Patches Angular's Shadow DOM renderer to not pull in unrelated styles",
   "author": {
     "name": "Ryan Bendel"
