@@ -1,0 +1,27 @@
+{
+  "name": "angular-shadowdom-patch",
+  "version": "1.0.0",
+  "description": "Patches Angular's Shadow DOM renderer to not pull in unrelated styles",
+  "author": {
+    "name": "Ryan Bendel"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ryan-bendel/angular-shadowdom-patch",
+  "keywords": [
+    "angular",
+    "shadowdom",
+    "renderer"
+  ],
+  "main": "src/patch-angular-shadowdom-renderer.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "private": false,
+  "bin": {
+    "angular-shadowdom-patch": "src/patch-angular-shadowdom-renderer.js"
+  }
+}
