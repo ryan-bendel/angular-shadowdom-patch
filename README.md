@@ -24,7 +24,7 @@ Add a `postinstall` script to your package.json:
 
 ```json
 "scripts": {
-"postinstall": "node ./tools/patch-angular-shadowdom-renderer.js",
+"postinstall": "node node_modules/patch-angular-shadowdom-renderer.js",
 }
 ```
 Now when you run `npm install`, the patch will be applied automatically.
