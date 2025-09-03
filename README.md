@@ -4,6 +4,13 @@
 
 #### Tested in Angular version `19.x` and `20.x` but cannot guarantee it will work with future versions.
 
+### Compatibility
+
+| This version | Angular version |
+|--------------|-----------------|
+| 2.0.0        | 20.2.0          |
+| 1.0.2        | 19.x - 20.1.x   |
+
 ### What this patch does:
 
 Currently, Angular's shadow dom implementation pulls in extra styling from the `sharedStylesHost`, which can massively add to bloat per component implementation.
