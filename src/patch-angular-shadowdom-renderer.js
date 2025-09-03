@@ -41,8 +41,8 @@ files.forEach(file => {
 class ShadowDomRenderer extends DefaultDomRenderer2 {
    hostEl;
     shadowRoot;
-    constructor(eventManager, hostEl, component, doc, ngZone, nonce, platformIsServer, tracingService) {
-        super(eventManager, doc, ngZone, platformIsServer, tracingService);
+    constructor(eventManager, hostEl, component, doc, ngZone, nonce, platformIsServer, tracingService, registry, maxAnimationTimeout) {
+        super(eventManager, doc, ngZone, platformIsServer, tracingService, registry, maxAnimationTimeout);
         this.hostEl = hostEl;
         this.shadowRoot = hostEl.attachShadow({ mode: 'open' });
         let styles = component.styles;
