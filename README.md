@@ -10,6 +10,7 @@ Version 3 is the most reliable version as it is more robust to class signature c
 
 | This version | Angular version |
 |--------------|-----------------|
+| 4.0.0        | > 21.x           |
 | 3.0.3        | > 19.x          |
 | 2.0.0        | 20.2.0          |
 | 1.0.2        | 19.x - 20.1.x   |
