@@ -5,18 +5,18 @@ const path = require('path');
 
 // Recursively find all dom_renderer*.js and dom_renderer*.mjs files in a directory
 function findDomRendererFiles(dir) {
-    let results = [];
-    const list = fs.readdirSync(dir);
-    list.forEach(file => {
-        const filePath = path.join(dir, file);
-        const stat = fs.statSync(filePath);
-        if (stat && stat.isDirectory()) {
-            results = results.concat(findDomRendererFiles(filePath));
-        } else if (/^dom_renderer.*\.(js|mjs)$/.test(file)) {
-            results.push(filePath);
-        }
-    });
-    return results;
+  let results = [];
+  const list = fs.readdirSync(dir);
+  list.forEach(file => {
+    const filePath = path.join(dir, file);
+    const stat = fs.statSync(filePath);
+    if (stat && stat.isDirectory()) {
+      results = results.concat(findDomRendererFiles(filePath));
+    } else if (/dom_renderer.*.(js|mjs)$/.test(file)) {
+      results.push(filePath);
+    }
+  });
+  return results;
 }
 
 const platformBrowserMain = require.resolve('@angular/platform-browser');
